@@ -2,7 +2,7 @@
 
 This library can be used to check if an Minecraft account is premium.
 
-**Warning: making too many request in a short period of time, the webserver IP will be banned (about 15min) from Mojang API.**
+**Warning: making too many request in a short period of time, the webserver IP will be temporary banned (about 15min) from Mojang API.**
 
 #### Using
 ```php
