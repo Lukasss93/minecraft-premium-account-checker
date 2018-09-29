@@ -1,0 +1,22 @@
+{
+	"name": "lukasss93/minecraft-premium-account-checker",
+	"description": "PHP library to check if a Minecraft account is Premium",
+	"license": "MIT",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Luca Patera",
+			"email": "lucapatera@outlook.it",
+			"homepage": "https://www.lucapatera.it/"
+		}
+	],
+	"require": {
+		"php": ">=5.6",
+		"guzzlehttp/guzzle": "^6.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"MCPremium\\": "src/"
+		}
+	}
+}
