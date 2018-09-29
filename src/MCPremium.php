@@ -12,9 +12,9 @@ use GuzzleHttp\Psr7\Response;
  * @package MCPremium
  */
 class MCPremium {
-	const game = "Minecraft";
-	const version = 12;
-	const api = "https://authserver.mojang.com/authenticate";
+	private static $game = "Minecraft";
+	private static $version = 12;
+	private static $api = "https://authserver.mojang.com/authenticate";
 	
 	private function __construct() {}
 	
@@ -29,8 +29,8 @@ class MCPremium {
 		//build parameters
 		$parameters = [
 			'agent'    => [
-				'name'    => self::game,
-				'version' => self::version
+				'name'    => self::$game,
+				'version' => self::$version
 			],
 			'username' => (string)$username,
 			'password' => (string)$password
@@ -45,7 +45,7 @@ class MCPremium {
 		
 		try {
 			//send request
-			$response = $client->post(self::api, [
+			$response = $client->post(self::$api, [
 				'json' => $parameters
 			]);
 		}
