@@ -36,12 +36,9 @@ class MCPremium {
 			'password' => (string)$password
 		];
 		
-		//initialize client
+		//initialize client + response
 		$client = new Client();
 		$response = new Response();
-		
-		//initialize output
-		$data = null;
 		
 		try {
 			//send request
